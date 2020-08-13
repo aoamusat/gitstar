@@ -4,6 +4,18 @@ import { IoIosList, IoMdApps } from "react-icons/all";
 import languages from '../data/language.json';
 
 function Filters() {
+
+    let isListView = false;
+
+    function toggleListView() { 
+        isListView = true;
+        console.log(isListView);
+    }
+
+    function toggleGridView() { 
+        isListView = false;
+        console.log(isListView);
+    }
     
     return (
         <Stack isInline spacing={2}>
@@ -27,8 +39,8 @@ function Filters() {
                 </MenuList>
             </Menu>
             <Stack isInline spacing={0} borderWidth={1} ml="10px" borderRadius="5px">
-                <Button bg="white" leftIcon={ IoMdApps }> Grid</Button>
-                <Button bg="white" leftIcon={ IoIosList }> List</Button>
+                <Button onClick={ toggleGridView } bg="white" leftIcon={ IoMdApps }> Grid</Button>
+                <Button onClick={ toggleListView } bg="white" leftIcon={ IoIosList }> List</Button>
             </Stack>
         </Stack>
     )

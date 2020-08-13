@@ -9,7 +9,7 @@ function Feeds() {
     return (
         <Box maxWidth="1200px" mx="auto">
             <PageHeader/>
-            <Flex alignContent="center" justifyContent="space-between" mb={8}>
+            <Flex alignContent="center" justifyContent="space-between" mb="25px">
                 <GroupTitle />
                 <Filters />
             </Flex>

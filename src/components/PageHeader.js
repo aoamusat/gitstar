@@ -1,3 +1,5 @@
+'user moz'
+
 import React from 'react';
 import Brand from './Brand';
 import { Button, ButtonGroup, Box, Flex } from '@chakra-ui/core';

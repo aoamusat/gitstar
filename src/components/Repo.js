@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { Box, Flex, Image, Text, Heading, Link, Stack, Button } from '@chakra-ui/core';
-import { GoRepo, GoIssueOpened, GoStar, GoRepoForked, GoCode } from "react-icons/all";
+import { GoIssueOpened, GoStar, GoRepoForked, GoCode } from "react-icons/all";
 
 class Repo extends Component {
 
     constructor(props) {
-        super(props);
-    
+        super(props)
+
         this.state = {
              isListView: false
-        };
+        }
     }
-     
+
 
     render() {
         return (
@@ -29,8 +29,8 @@ class Repo extends Component {
                             <Text fontSize="14px" color="gray.600">Built by: <Link href="https://github.com">username</Link>. July 19, 2020</Text>
                         </Box>
                         <Text mt="10px" fontSize="14px" color="gray.600">
-                            A brand new way to write responsive CSS. 
-                            Named breakpoints, DRY selectors, no scripts, 
+                            A brand new way to write responsive CSS.
+                            Named breakpoints, DRY selectors, no scripts,
                             no builds, vanilla CSS.
                         </Text>
                     </Box>
